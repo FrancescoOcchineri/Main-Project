@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: white;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.alignLeft{
+    text-align: left;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+.container {
+    margin: 5%;
+}
+
+h1, h2, h3{
+    font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+#domanda {
+  margin: 1.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  font-weight: 200;
+}
+
+p, ul, label {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+  margin: 0.3em 0;
+}
+
+form h3 {
+  margin-top: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+form .btnCeles {
+  font-family: 'Outfit', sans-serif;
+  margin: 1em;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #C0128C;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 48em;
+  padding: 1em;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+#stelle {
+  padding: 2em;
+}
+
+input::placeholder {
+  font-family: 'Inter', sans-serif;
+}
+
+.logo{
+    width: 12em;
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: left;
+}
+
+span::before{
+    content: "\a";
+    white-space: pre;
+}
+
+.titolo-welcome {
+  font-size: 5em;
+  font-weight: 300;
+  line-height: 0.75em;
+}
+
+span {
+  font-weight: 600;
+}
+
+#instructions {
+  color: #C2128D;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.homehome p {
+  margin-right: 60%;
+  margin-bottom: 3em;
+  font-weight: 200;
+  margin-left: 2.5em;
+}
+
+.homehome ul {
+  list-style-type: disc;
+  line-height: 1.5em;
+  font-weight: 200;
+  font-family: 'Outfit', sans-serif;
+  margin-left: 4em;
+}
+
+b {
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  height: 1em;
+  width: 1em;
+  margin-left: 3.5em;
+  transform: translate(0%, 20%);
+}
+
+input[type="checkbox"]:checked {
+  background-color: white;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+#cb {
+  margin-top: 6em;
+  text-align: left;
+}
+
+#btn {
+  margin-left: 10em;
+}
+
+.btnCeles {
+    color: #0B113B;
+    font-size: 2em;
+    font-weight: 600;
+    background-color: #00FFFF;
+    border: none;
+    box-shadow: 0px 0px 30px #00FFFF;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btnCeles:disabled{
+  color: rgba(0, 0, 0, 0.378);
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.161);
+  border: none;
+  box-shadow: none;
+  width: 200px;
+  height: 50px;
+}
+
+.btnTransp {
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.04);
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    box-shadow: 0px 0px 10px #00ffff76;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btnBench {
+    background: rgb(210,0,148);
+    background: -moz-linear-gradient(180deg, rgba(210,0,148,1) 0%, rgba(144,0,128,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(210,0,148,1) 0%, rgba(144,0,128,1) 100%);
+    background: linear-gradient(180deg, rgba(210,0,148,1) 0%, rgba(144,0,128,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d20094",endColorstr="#900080",GradientType=1);
+}
+
+.timer {
+  margin-top: -10%;
+  display: inline-block;
+  transform: translate(70em, 6.8em);
+  padding-bottom: 5em;
+}
+  
+.timer > svg {
+    width: 200px;
+    height: 200px;
+}
+
+.timer > svg > circle {
+    fill: none;
+    stroke-opacity: 0.3;
+    stroke: #00FFFF;
+    stroke-width: 15;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0))
+}
+
+.timer > svg > circle + circle {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    stroke-linecap: square;
+    stroke-opacity: 1;
+}
+
+.timer.animatable > svg > circle + circle {
+    transition: stroke-dashoffset 0.3s ease;
+}
+  
+ @keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 1px;
+    }
+  }
+ 
+.timer text{
+    fill: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.6rem;
+    transform: translate(0%, 7%);
+}
+
+#timer-number {
+    font-size: 2.5rem;
+}
+
+.timer > svg > text + text {
+  font-size: 0.6rem;
+  transform: translate(0%, 0%);
+}
+
+#remaining {
+  transform: translate(0%, -5%);
+}
+  
+.chart-container {
+    position: relative;
+    margin: 1em auto;
+    width: 350px;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+
+#doughnutChart {
+  text-shadow: 5px 5px 5px white;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+  
+canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 0 none;
+    border-style: dashed;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.center-text, .center-textDue, .center-textTre {
+    transform: translate(0%, -210%);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.center-textDue {
+    transform: translate(0%, 0%);
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+.center-textTre {
+    transform: translate(0%, 0%);
+    margin-top: 2em;
+    margin-left: 6em;
+    margin-right: 6em;
+    font-weight: 100;
+    font-size: 80%;
+}
+
+#rate {
+    transform: translate(0%, -195%);
+}
+
+#mainResult {
+  position: relative;
+}
+
+#correct, #wrong {
+  position: absolute;
+  text-align: center;
+  width: calc(50% - 20px);
+  top: 8em;
+}
+
+#correct {
+  left: 20%;
+  text-align: left;
+}
+
+#correct p:first-of-type {
+  font-size: 2.3em;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;;
+}
+
+#wrong {
+  right: 20%;
+  text-align: right;
+  
+}
+
+#wrong p:first-of-type {
+  font-size: 2.3em;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;;
+}
+
+/* td button {
+  padding: 1em;
+  margin: 1em;
+  background-color: #ffffff1f;
+  color: white;
+  border-radius: 30px;
+  width: 300px;
+  height: 55px;
+  border-width: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+} */
+
+/* td button:hover {
+  background: linear-gradient(to bottom, #ff00b7, #8A0179);
+} */
+
+/* td button:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 3px;
+  background: linear-gradient(178deg, white, #ffffff00);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+} */
+
+/* td button:hover:before {
+  z-index: -1;
+} */
+
+
+#tableAnswers {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottoneRisposta{
+  width: 40%;
+    height: 80px;
+    border-radius: 50px;
+    margin: 1em 1.5em;
+    background-color: #8080802e;
+    border-color: #ffffffc0;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bottoneRisposta:hover {
+  background: linear-gradient(to bottom, #ff00b7, #8A0179);
+}
+
+#mainDomande {
+  margin-left: 25%;
+  margin-right: 25%;
+}
